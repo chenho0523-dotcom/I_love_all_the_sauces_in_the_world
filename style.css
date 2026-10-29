@@ -42,8 +42,8 @@ h2 {
 	width: 15%; 
 	position: absolute; 
 	z-index: 2;
-	top: -70%;
-    left: 13%;
+	top: -60%;
+    left: 11.5%;
 	cursor: pointer;
 }
 
@@ -51,8 +51,8 @@ h2 {
 	width: 5%; 
 	position: absolute; 
 	z-index: 2;
-	top: -70%;
-    left: 34%;
+	top: -65%;
+    left: 30%;
 }
 
 .bottle{
@@ -63,10 +63,18 @@ h2 {
 	z-index: 1;
 }
 
+.Top_of_bottle{
+	width: 15%; 
+	position: absolute;
+	top: -10%;
+	left: 1%;
+	z-index: 20;
+}
+
 .tomato{
 	width: 13%;   
 	position: absolute;
-	right: 27em;
+	right: 30em;
     bottom: 17em;
 	cursor: pointer;
 	z-index: 2;
