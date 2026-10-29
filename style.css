@@ -1,0 +1,203 @@
+html, body {
+	margin: 0;
+	background-color: white;
+	overflow: hidden;
+}
+
+/* @media(max-width: 767px) {
+	html, body {
+		background-color: #00ff00;
+	}
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR+Guides&family=Playwrite+IT+Trad:wght@100..400&display=swap');
+@import url("https://use.typekit.net/let0unh.css");
+
+
+h1 {
+    font-family: "bookmania", serif;
+    font-size: 40pt;
+	text-align: center;
+}
+
+h2 {
+	display: none;
+}
+
+.Board{
+	position: absolute;
+    width: 40%;
+    right: 7em;
+    bottom: 30%;
+	z-index: 1;
+}
+.cuisin{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.save_button{
+	width: 15%; 
+	position: absolute; 
+	z-index: 2;
+	top: -70%;
+    left: 13%;
+	cursor: pointer;
+}
+
+.about_button{
+	width: 5%; 
+	position: absolute; 
+	z-index: 2;
+	top: -70%;
+    left: 34%;
+}
+
+.bottle{
+	width: 25%;   
+	position: absolute;
+	margin-left: 13em;
+    margin-top: -20em;
+	z-index: 1;
+}
+
+.tomato{
+	width: 13%;   
+	position: absolute;
+	right: 27em;
+    bottom: 17em;
+	cursor: pointer;
+	z-index: 2;
+}
+.tomato_blur{
+	display: none;
+	width: 13%;   
+	position: absolute;
+	left: 14em;
+    bottom: 8em;
+	z-index: 3;
+}
+
+.lemon{
+	width: 15%;  
+	position: absolute;
+	right: 10em;
+    bottom: 18em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.lemon_blur{
+	width: 17%; 
+	display: none;
+	transform: rotate(-102deg);
+	position: absolute;
+	left: 17em;
+    bottom: 60%;
+	z-index: 3;
+}
+
+.garlic{
+	width: 12%;  
+	position: absolute;
+	/* transform: rotate(-19deg); */
+	right: 20em;
+    bottom: 7em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.garlic_blur{
+	width: 15%; 
+	display: none;
+	position: absolute;
+	left: 17em;
+    bottom: 40%;
+	z-index: 3;
+}
+
+.table {
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+.centre-text {
+	text-align: center;
+}
+
+.recipebook {
+    display: none;
+    position: fixed;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 10;
+}
+
+.recipebook.show {
+    display: block;
+}
+
+.recipe_text{
+	position: absolute;
+	background: transparent;
+    left: 33%;
+    width: 40%;
+	z-index: 20;
+}
+
+.book {
+	width: 82%;
+	position: absolute;
+	margin-top: -30%;
+	margin-left: 9%;
+	z-index: 11;
+	pointer-events: none;
+}
+
+.create_tab{
+	width: 10%;
+	cursor: pointer;
+	position: absolute;
+	margin-top: -15%;
+	z-index: 30;
+	margin-left: 76.4%;
+}
+.list_tab{
+	width: 6.3%;
+	cursor: pointer;
+	margin-top: -10%;
+    position: absolute;
+	z-index: 30;
+	margin-left: 76.4%;
+}
+
+.page {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 33%;
+    width: 40%;
+    height: 60%;
+    z-index: 20;
+}
+
+.page.show {
+    display: block;
+}
+
+#add_recipe {
+	font-family: "bookmania", serif;
+    color: black;
+	background-color: #f9ffeb;
+    font-size: 1em;
+    cursor: pointer;
+	position: absolute;
+    bottom: -207px;
+    right: 0;
+}
