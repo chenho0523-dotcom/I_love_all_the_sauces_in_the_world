@@ -12,24 +12,61 @@
 	</head>
 	<body>
 		<main>
-			<h1>Make your favorite sauce</h1>
-			<h2>Do you have a favorite sauce? <br>
+			<h1 id="title">Make your favorite sauce</h1>
+
+			<div id="about_text">
+				<h2>What's your favorite sauce?</h2>
+				<h3>
 				From mayonnaise to your own secret recipes, feel free to record and collect your very own sauces.
 				You can share what ingredients you used, how you made it, and what it tastes great with.
 				Check out what kinds of sauces others are making and discover new combinations. <br>
-				Let’s make today’s meal even more delicious by collecting and sharing our very own sauce recipes!</h2>
+				Let’s make today’s meal even more delicious by collecting and sharing our very own sauce recipes!
+				</h3>
+			</div>
 		</main>
 
 		<div class="recipebook" id="recipebook">
-			<img src="./book.png" alt="book" id= "book" class="book" >
+			<img src="./book.png" alt="book" id= "book" class="book">
 			<div class="page create_page show" id="create_page">
-        		<textarea id="recipe_text" class="recipe_text" placeholder="write your recipe...."></textarea>
-				<button id="add_recipe">Share your recipe!</button>
-    		</div>
+				<p>Please write the name and ingredients of the sauce.  How did you find out about this recipe? What foods does this sauce go well with? Is it a sauce meant to be served warm or cold?</p>
+				<textarea id="recipe_ingredients" class="recipe_text" placeholder=""></textarea>
+				<button id="add_recipe">╰┈➤ Share your recipe ! </button>
+			</div>
 
-   			 <div class="page list_page" id="list_page">
-       		 	<ul id="recipe_list"></ul>
-    		</div>
+			<div class="page list_page" id="list_page">
+				<ul id="recipe_list">
+					<li>
+						<span class="recipe_date">30.10.2026</span>
+						<strong>cheddar cheese sauce</strong>
+						<div>cheddar cheese, white sauce, English mustard, pepper, salt, butter Cheddar sauce can be used in a variety of ways including being poured over meats, types of pasta, vegetables and even as a dip. This sauce pairs well with lasagna. </div>
+					</li>
+					<li>
+						<span class="recipe_date">28.10.2026</span>
+						<strong>Korean sweet and spicy chicken sauce</strong>
+						<div>It matches well with chicken. Mix 1 tbsp gochujang, 2 tbsp ketchup, 1 tbsp soy sauce, and 2 tbsp corn syrup.Add 1 tbsp minced garlic, 1 tbsp sugar, and 2 tbsp water.Simmer over low heat until thick and glossy. Enjoy your sweet and spicy Korean fried chicken sauce!</div>
+					</li>
+					<li>
+						<span class="recipe_date">28.10.2026</span>
+						<strong>Coffee sauce</strong>
+						<div>Coffee sauce is a culinary sauce that includes coffee in its preparation. It is sometimes prepared using instant coffee. Sweet preparations may use sweeteners such as sugar, simple syrup, maple syrup or golden syrup. Sweet uses of the sauce include its use on cakes, chestnuts, flan, ice cream, pancakes, puddings, tortes, soufflés, sweet potatoes and waffles.</div>
+					</li>
+					<li>
+						<span class="recipe_date">28.10.2026</span>
+						<strong>Wow-Wow sauce</strong>
+						<div>It contains port, wine vinegar, parsley, pickled cucumbers or pickled walnuts, English mustard and mushroom ketchup in a base of beef stock, flour and butter.</div>
+					</li>
+					<li>
+						<span class="recipe_date">28.10.2026</span>
+						<strong>Comeback sauce</strong>
+						<div>a dipping sauce used for fried foods or as a salad dressing in the cuisine of central Mississippi, in the United States of America. Its main ingredients are mayonnaise and ketchup or chili sauce.</div>
+					</li>
+					<li>
+						<span class="recipe_date">28.10.2026</span>
+						<strong>Onion gravy</strong>
+						<div>Primary ingredients include onion, broth or stock, such as beef or chicken stock, and flour.Sweet onion is used in some versions,and some versions incorporate beer or red wine in the gravy.Additional ingredients may include cream, garlic, bread crumbs, butter, vegetable oil, and brown sugar,among others. Various herbs and spices may be used, such as salt, pepper, sage, oregano, and thyme.</div>
+					</li>
+				</ul>
+			</div>
 
 			<img src="./create_tab.png" alt="create_tab" class="create_tab" id="create_tab">
    			<img src="./list_tab.png" alt="list_tab" class="list_tab" id="list_tab">
@@ -38,7 +75,7 @@
 		
 		<div class="cuisin">
 			<img src="./save_button.png" alt="save_button" id= "save_button" class="save_button" >
-			<img src="./about_button.png" alt="about_button" id= "about_button" class="about_button">
+			<img src="./about_button.png" alt="about_button" id="about_button" class="about_button">
 			<img src="./bottle.png" alt="bottle" class="bottle">
 			<img src="./Cutting Board .png" alt="Cutting Board " class="Board ">
 			<img src="./tomato.png" alt="tomato" id= "tomato" class="tomato">
@@ -47,13 +84,24 @@
 			<img src="./lemon_blur.png" alt="lemon_blur" id= "lemon_blur" class="lemon_blur">
 			<img src="./garlic.png" alt="garlic" id= "garlic" class="garlic">
 			<img src="./garlic_blur.png" alt="garlic_blur" id= "garlic_blur" class="garlic_blur">
+			<img src="./lime.png" alt="lime" id= "lime" class="lime">
+			<img src="./lime_blur.png" alt="lime_blur" id= "lime_blur" class="lime_blur">
+			<img src="./mushroom.png" alt="mushroom" id= "mushroom" class="mushroom">
+			<img src="./mushroom_blur.png" alt="mushroom_blur" id= "mushroom_blur" class="mushroom_blur">
+			<img src="./chilipepper.png" alt="chilipepper" id= "chilipepper" class="chilipepper">
+			<img src="./chilipepper_blur.png" alt="chilipepper_blur" id= "chilipepper_blur" class="chilipepper_blur">
+			<img src="./salt.png" alt="salt" id= "salt" class="salt">
+			<img src="./salt_blur.png" alt="salt_blur" id= "salt_blur" class="salt_blur">
+			<img src="./pepper.png" alt="pepper" id= "pepper" class="pepper">
+			<img src="./pepper_blur.png" alt="pepper_blur" id= "pepper_blur" class="pepper_blur">
+			<img src="./soysauce.png" alt="soysauce" id= "soysauce" class="soysauce">
+			<img src="./soysauce_blur.png" alt="soysauce_blur" id= "soysauce_blur" class="soysauce_blur">
+			<img src="./mayo.png" alt="mayo" id= "mayo" class="mayo">
+			<img src="./mayo_blur.png" alt="mayo_blur" id= "mayo_blur" class="mayo_blur">
 			<img src="./table.png" alt="table" class="table">
 			<img src="./Top_of_bottle.png" alt="Top_of_bottle" class="Top_of_bottle">
 			
 		</div>
-
-
-
 		<script src="./script.js"></script>
 	</body>
 </html>

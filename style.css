@@ -20,15 +20,23 @@ h1 {
 	text-align: center;
 }
 
-h2 {
+
+#about_text {
+	display: none;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.hidden {
 	display: none;
 }
 
+
 .Board{
 	position: absolute;
-    width: 40%;
-    right: 7em;
-    bottom: 30%;
+    width: 50%;
+    right: 5em;
+    bottom: 5%;
 	z-index: 1;
 }
 .cuisin{
@@ -41,7 +49,7 @@ h2 {
 .save_button{
 	width: 15%; 
 	position: absolute; 
-	z-index: 2;
+	z-index: 10;
 	top: -60%;
     left: 11.5%;
 	cursor: pointer;
@@ -50,7 +58,7 @@ h2 {
 .about_button{
 	width: 5%; 
 	position: absolute; 
-	z-index: 2;
+	z-index: 10;
 	top: -65%;
     left: 30%;
 }
@@ -74,8 +82,8 @@ h2 {
 .tomato{
 	width: 13%;   
 	position: absolute;
-	right: 30em;
-    bottom: 17em;
+	right: 32em;
+    bottom: 12em;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -92,7 +100,7 @@ h2 {
 	width: 15%;  
 	position: absolute;
 	right: 10em;
-    bottom: 18em;
+    bottom: 13em;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -102,17 +110,17 @@ h2 {
 	display: none;
 	transform: rotate(-102deg);
 	position: absolute;
-	left: 17em;
-    bottom: 60%;
+	left: 13em;
+    bottom: 65%;
 	z-index: 3;
 }
 
 .garlic{
-	width: 12%;  
+	width: 10%;  
 	position: absolute;
-	/* transform: rotate(-19deg); */
-	right: 20em;
-    bottom: 7em;
+	transform: rotate(19deg);
+	right: 25em;
+    bottom: 2em;
 	cursor: pointer;
 	z-index: 2;
 }
@@ -126,11 +134,138 @@ h2 {
 	z-index: 3;
 }
 
+.lime{
+	width: 12%;  
+	position: absolute;
+	right: 7.5em;
+    bottom: 10em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.lime_blur{
+	width: 15%; 
+	display: none;
+	position: absolute;
+	left: 17em;
+    bottom: 120%;
+	z-index: 3;
+}
+
+.mushroom{
+	width: 11%;  
+	position: absolute;
+	right: 40em;
+    bottom: 2em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.mushroom_blur{
+	width: 15%; 
+	display: none;
+	position: absolute;
+	left: 23.5em;
+    bottom: 20%;
+	z-index: 2;
+	transform: rotate(-100deg)
+}
+.chilipepper{
+	width: 18%;  
+	position: absolute;
+	right: 6em;
+    bottom: 2em;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.chilipepper_blur{
+	width: 25%; 
+	display: none;
+	position: absolute;
+	left: 21em;
+    bottom: 96%;
+	z-index: 3;
+	transform: rotate(-60deg);
+}
+
+.salt{
+	width: 13%; 
+	position: absolute;
+	right: 43em;
+	z-index: 0;
+	cursor: pointer;
+	bottom: 90%;
+}
+
+.salt_blur{
+	width: 13%; 
+	display: none;
+	position: absolute;
+	left: 15em;
+	z-index: 8;
+	bottom: 90%;
+}
+
+.pepper{
+	width: 13%; 
+	position: absolute;
+	right: 31em;
+	cursor: pointer;
+	z-index: 0;
+	bottom: 90%;
+}
+
+.pepper_blur{
+	width: 13%; 
+	display: none;
+	position: absolute;
+	left: 23em;
+    bottom: 90%;
+	z-index: 8;
+}
+
+.soysauce{
+	width: 13%; 
+	position: absolute;
+	right: 17em;
+	z-index: 0;
+	cursor: pointer;
+	bottom: 90%;
+}
+
+.soysauce_blur{
+	width: 18%; 
+	display: none;
+	position: absolute;
+	left: 15em;
+    bottom: 40%;
+	z-index: 5;
+}
+
+.mayo{
+	width: 15%; 
+	position: absolute;
+	right: 2em;
+	cursor: pointer;
+	z-index: -1;
+	bottom: 90%;
+}
+
+.mayo_blur{
+	width: 25%; 
+	display: none;
+	position: absolute;
+	left: 15em;
+    bottom: 20%;
+	z-index: 5;
+}
+
 .table {
 	display: block;
 	width: 100%;
 	position: relative;
-	z-index: 0;
+	z-index: -10;
 }
 
 .centre-text {
@@ -150,15 +285,67 @@ h2 {
 .recipebook.show {
     display: block;
 }
+p {
+	font-family: "bookmania", serif;
+	font-size: 15pt;
+	position: absolute;
+	margin-top: -40%;
+}
 
 .recipe_text{
-	position: absolute;
+	position: relative;
 	background: transparent;
-    left: 33%;
-    width: 40%;
+	resize: none; 
+	margin-top: 10%;
+	height: 200px; 
+    width: 100%;
 	z-index: 20;
 }
 
+.list_page {
+	font-family: "bookmania", serif;
+	position: relative;
+	font-size: 13pt;
+	height: 400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-top: 30px;      
+	scrollbar-width: none;    
+	-ms-overflow-style: none;  
+	box-sizing: border-box;
+}
+
+#recipe_list {
+	list-style: none;
+	padding: 0; 
+   	margin: 0;
+	top: 0;
+}
+
+#recipe_list li {
+	margin-bottom: 40px;   
+}
+
+.recipe_date {
+	display: block;
+	font-size: 12px; 
+	opacity: 0.7;
+	margin-bottom: 2px;
+}
+
+#add_recipe {
+	font-family: "bookmania", serif;
+	color: black;
+	background-color: #f9ffeb;
+	font-size: 18pt;
+	cursor: pointer;
+	border: none;
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;   /* 오른쪽 정렬 */
+	position: relative;
+	z-index: 25;
+}
 .book {
 	width: 82%;
 	position: absolute;
@@ -177,7 +364,7 @@ h2 {
 	margin-left: 76.4%;
 }
 .list_tab{
-	width: 6.3%;
+	width: 10%;
 	cursor: pointer;
 	margin-top: -10%;
     position: absolute;
@@ -188,10 +375,9 @@ h2 {
 .page {
     display: none;
     position: absolute;
-    top: 15%;
+    top: 20%; 
     left: 33%;
     width: 40%;
-    height: 60%;
     z-index: 20;
 }
 
@@ -199,13 +385,3 @@ h2 {
     display: block;
 }
 
-#add_recipe {
-	font-family: "bookmania", serif;
-    color: black;
-	background-color: #f9ffeb;
-    font-size: 1em;
-    cursor: pointer;
-	position: absolute;
-    bottom: -207px;
-    right: 0;
-}
